@@ -17,11 +17,11 @@ build:
 push-release:
   steps:
     - internal/docker-push:
-        username: $DOCKER_USERNAME
-        password: $OCI_AUTH_TOKEN
-        repository: $DOCKER_REGISTRY/$DOCKER_REPO
-        registry: https://$DOCKER_REGISTRY/v2
-        tag: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+        username: danny_sohn_10@daum.net
+        password: Welcome1234!
+        repository: iad.ocir.io/spica27/twitter-feed
+        registry: https://iad.ocir.io/v2
+        tag: master-9e3d18a9c7ac6b507745b6ceda0f5289857be1e4
         working-dir: /pipeline/source
         ports: 8080
         cmd: sh target/bin/start
